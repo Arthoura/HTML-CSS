@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Testando imagens</h1>
+    <h2>Estamos testando imagens para diferentes formatos de tela</h2>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/tamanhop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/tamanhom.png" type="image/png">
+        <img src="imagens/tamanhog.png" alt="imagem tamanho g">
+    </picture>
+    <h1>Agora vamos reproduzir um áudio</h1>
+    <p>Vamos agora aprender a reproduzir um áudio no navegador com HTML5</p>
+    <audio src="midia/Decay Tower - roljui.mp3" controls></audio>
+
+    <!--Outra forma abaixo:-->
+
+    <audio controls loop>
+        <source src="midia/Decay Tower - roljui.mp3" type="audio/mpeg">
+        <source src="midia/Decay Tower - roljui.ogg" type="audio/ogg">
+        <source src="midia/Decay Tower - roljui.wav" type="audio/wav">
+      
+    </audio>
+    <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Decay Tower - roljui.mp3">Clique aqui para baixar o áudio MP3</a></p>
+
+    <p>Clique <a href="imagens/tamanhog.png" download="imagens/tamanhog.png">aqui</a> para baixar a imagem</p>
+</body>
+</html>

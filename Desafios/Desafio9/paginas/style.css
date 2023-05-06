@@ -1,0 +1,28 @@
+body{
+    background: rgba(0, 0, 0, 0.895);
+}
+
+div#video{
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font: normal 25pt Verdana;
+}
+
+p#playlist{
+    text-align: center;
+    font: normal 15pt Verdana;
+    color: white;
+}
+
+a#playlist{
+    text-decoration: none;
+    color: white;
+}
+
+div#botaoVoltar{
+    text-align: center;
+}

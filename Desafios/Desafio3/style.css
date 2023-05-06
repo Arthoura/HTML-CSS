@@ -1,0 +1,12 @@
+section{
+    text-align: center;
+}
+
+header{
+    text-align: center;
+}
+
+div#imagens{
+    display: flex;
+    flex-direction: column;
+}
