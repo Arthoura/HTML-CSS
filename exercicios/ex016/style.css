@@ -1,0 +1,33 @@
+.quadrado{
+width:100px;
+height: 100px;
+display: inline-block;
+background-size: 100px 100px;
+}
+.container-imagens{
+display:flex;
+background-color: aqua;
+justify-content: center;
+align-items: center;
+margin: auto;
+height: 780px;
+}
+body{
+    margin:0;
+}
+.quadrado-john{
+    background-image: url("imagens/john.png");
+    order: 1;
+}
+.quadrado-george{
+    background-image: url("imagens/george.png");
+    order: -1;
+}
+.quadrado-paul{
+    background-image: url("imagens/paul.png");
+    order: 0;
+}
+.quadrado-ringo{
+    background-image: url("imagens/ringo.png");
+    order: 2;
+}
