@@ -43,7 +43,8 @@ a:hover{
 }
 
 section{
-    padding: 65px 10px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     font: normal 3.5vw var(--fonte-texto), Arial, Helvetica, sans-serif;
     line-height: 2em;
 }
