@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for = "iprof">Profissão</label>
+    <input type="text" name="prof" id = "iprof" list = "listprof">
+    <datalist id = "listprof">
+        <option>Administrador</option>
+        <option>Policial</option>
+        <option>Desenvolvedor</option>
+    </datalist>
+    <br>
+    <label for = "iest">Estado</label>
+    <select name = "estado" id = "iest">
+        <optgroup label = "Região Sudeste"> <!--Permite que eu agrupe os Estados por grupo-->
+            <option value = "RJ">Rio de Janeiro</option>
+            <option value = "SP">São Paulo</option>
+            <option value = "PE">Pernambuco</option>
+        </optgroup>
+
+    </select>
+
+    <p>
+        <label for="itex">Digite algo</label><br>
+        <textarea name="tex" id="itex" cols="30" rows="10" placeholder="digite algo"></textarea>
+    </p>
+
+</body>
+</html>

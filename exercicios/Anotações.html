@@ -1,0 +1,956 @@
+<Anotações>
+
+<Domínio: - Nome único
+		 - Pago anualmente
+		 - Vários TLDs (.com, .edu, .gov, etc)>
+
+
+<Hospedagem: -Espaço para armazenar os arquivos
+		     -Pago mensalmente
+		     -Espaço, memória, recursos>
+
+
+<Aula3:>
+
+<img src="nomeFoto.png" alt="Exemplo de foto">
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------>
+<Aula5 (Primeiro Código)>
+
+<h1>Acrescenta um título</h1>
+
+<hr>Abre uma linha horizontal por toda a tela
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------>
+<Aula6 (parágrafos e quebras)>
+
+<p>Acrescenta um parágrafo</p>
+
+<br> Quebra o parágrafo. Oq vier depois dele vai pra linha de baixo
+
+&lt; -> Representa o sinal de menor '<'
+
+&gt; -> Representa o sinal de maior '>'
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------>
+<Aula7 (Símbolos e emoji)>
+
+<p>Para adicionar Emoji:
+	*Acesso o emojipedia
+	*copio o unicode
+	*&#xunicode
+
+	ex: &#x1F596
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------>
+<Aula8 (Direito de imagem)>
+Google -> Ferramentas -> Direito de uso -> marcadas para reutilização com modificação
+
+Sites com imagens gratuitas: 
+							- Unsplash
+							- Pexels
+
+
+gimp -> Alteração de imagens
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------>
+<Aula9 (Usando o GIMP)>
+
+Imagem -> Redimensionar imagem -> 1500 de largura
+
+(Para aparecer em sites, normalmente a largura é 650 para usar no conteúdo)
+
+<img src="nome_do_arquivo (só apertar ctrl+espaço)" alt = "texto alternativo">
+
+<img src = "url da imagem" alt = "Logo JavaScript"> -> Como colocar imagens da internet
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------>
+<Aula10 (favicon de um site)>
+
+IconArchive  -> Site com vários ícones (baixar no formato .ico)
+
+favcon.cc    -> Site para desenhar ícones
+favcon.io    -> Faz ícone automaticamente (PNG->ICO)
+
+<Para add o favicon>
+add no head: 
+link:favicon 
+
+em href, seleciono o arquivo que desejo}
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------->
+<Aula14-15 (TAGs de formatção)>
+
+<tálico:>
+Método 1:
+ - Seleciono o termo (frase)
+ - Aperto ctrl+shift+p
+ - Seleciono abb (emmend wrap)
+ - Aperto a letra em em
+
+Método 2:
+ - Coloco a frase entre <em></em> 
+
+
+<negrito>
+ - Coloco a frase ou a palavra entre <strong></strong>
+
+
+ <Marca-texto>
+ -Para criar um efeito de marca-texto <mark></mark>
+
+
+<CSS dentro da tag>
+ Para criar um CSS dentro de uma tag, faço:
+
+ <mark style = "background-color: limegreen;">
+
+
+ <Grande-e-Pequeno>
+ <big></big> Deixa o texto maior (mas é obsoleto)
+ <smal></smal> Deixa o texto menor (ainda é usado)
+
+
+ <Texto-excluído(riscado)>
+ -Insiro o texto entre as tags <del></del>
+
+ <Texto-inserido(sublinhado)>
+ -Insiro o texto entre as tagas <ins></ins>
+
+ <Texto-com-letras-em-cima(elevado)>
+ -Insiro o texto entre as tags <sup></sup>. Exp: x²
+
+ <Texto-com-letras-embaixo(rebaixado)>
+ -Insiro o texto entre as tagas <sub></sub>. Exp: H<sub>2</sub>O (deixa o 2 abaixo do H)
+
+ <Formatar-Trechos-de-codigo-para-melhor-exibição>
+
+ -Insiro o comando <code></code>
+ ex.: <code>document.getElementById("teste")</code>
+
+ -Para identar o código, isto é, deixar ele exatamente como escrevi, envelopo a tag code pela tag <pre><code>Trecho de código</code></pre>
+
+ <Eliminar-as-TABs>
+
+ -Aperto shift+TAB
+
+ <Citações>
+
+ 	<!--Simples:-->
+ -Insiro a citação entre as TAGS <q></q>
+ -É importante usar essas tags para dar sentido ao texto.
+
+ 	<!--Composta-->
+ -Insiro a citação entre as tagas 
+ <blockquote cite = "URL do livro no google livros"></blockquote>
+
+ <Abreviações>
+
+ -Para explicar o significado de uma abreviação, acrescento ela entre as TAGs <abbr title = "significado da abreviatura"></abbr>
+ Nesse caso, quando passar o mouse por cima, ele vai mostrar o resultado
+
+
+ <LISTAS>
+
+ <!--Listas ordenadas:-->
+
+ São listas que possuem uma ordem
+
+ Esse é um exemplo de lista ordenada:
+ 1 - Acordar
+ 2 - Tomar café
+ 3 - Estudar
+
+ Para fazer isso em HTML, posso escrever:
+<h2>Esse é um exemplo de lista ordenada</h2>
+ <ol>
+ 	<li>Acordar</li>
+ 	<li>Tomarcafe</li>
+ 	<li>Escovar os dentes</li>
+ </ol>
+
+ Para mudar a forma de enumeração, acrescento o "type" dentro da tag ol, da seguinte forma:
+
+ <ol type = "tipo-da-lista">
+
+ Se eu quiser que comece a partir de um certo número, acrescento um parâmetro "start" dentro da tag
+
+
+ <!--Listas NÃO ordenadas:-->
+<ul type = "">
+	<li>Comprar pão</li>
+	<li>Comprar queijo</li>
+	<li>Macarrão</li>
+</ul>
+
+Em type, posso adicionar "disc" (disco preto fechado), "circle", "square".
+
+ <!--Listas de definição:-->
+ <dl>
+ 	<dt>Termo</dt>
+ 	<dd>Descrição</dd>
+ </dl>
+
+No CSS, podemos fazer:
+    - list-style-type: '\2713'; //Add o emoji correspondente ao código como numerador da lista
+    - columns: 2; //Divide a lista em colunas
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------->
+<Aula14-16 (LINKS)>
+
+<a href="url_link">Texto linkado</a>
+
+Se eu fizer dessa forma acima, o link será aberto no navegador atual, fechando o meu site. Para evitar que isto aconteça, faço:
+
+<a href = "url_link" target = "_blank" rel = "external">
+
+O target pode ser dos seguintes tipos:
+- _blank: abre pra uma janela em branco
+- _self: abre o link na janela atual
+- _top: desfaz todos os frames e abre o destino no navegador completo
+- _parent: 
+
+O rel pode ser dos seguintes tipos:
+- next indica que o link é para a próxima parte do documento atual 
+- prev indica que o link é para a parte anterior do documento atual 
+- author indica que é um link para o site do autor do artigo atual 
+- external indica que é um link para outro site que não faz parte do site atual
+- nofollow indica que é um link para um site não endossado, como um link pago 
+
+
+<!------------Link pro mesmo site----------->
+
+* no href coloco o nome do arquivo.
+Se o arquivo tiver dentro de alguma pasta, seleciono o caminho inteiro do arquivo.
+
+* Se eu tiver em uma página e quiser voltar pra anterior, mas a anterior estiver fora da pasta, aperto ../ (essa ação me fará voltar para pasta anterior)
+
+* no target, coloco "_self", para abrir na mesma aba e em rel, coloco "next"
+
+
+<!------------Link pra download----------->
+
+<a href = "nome_do_arquivo" download = "nome_do_arquivo" type = "application/PDF">
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+
+<Aula 17 (Imagens dinâmicas para celular, tablet e computador)>
+
+- Ao produzir as imagens para meu site, o ideal é produzir em 3 tamanhos diferentes: 300px (celular), 700px (tablet) e 1000px (computador)
+
+<picture>
+    <source media = "(max-width: 750px)" srcset = "imagens/tamanhop.png" type = "image/png">    
+
+     <source media = "(max-width: 1050px)" srcset = "imagens/tamanhom.png" type = "image/png">
+
+     <img src="imagens/tamanhog.png" alt="imagem tamanho g">
+</picture>
+
+OBS: SEMPRE COLOCAR NA ORDEM: PEQUENA -> MÉDIA -> GRANDE
+
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+
+<Aula 18 (adicionando áudios)>
+
+Para encontrar áudios gratuitos, vou na biblioteca de audio do youtube, seleciono a opção "atribuição não necessária" dentro da aba "tipo de licença"
+<audio autoplay controls loop>
+        <source src="midia/Decay Tower - roljui.mp3" type="audio/mpeg">
+        <source src="midia/Decay Tower - roljui.ogg" type="audio/ogg">
+        <source src="midia/Decay Tower - roljui.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Decay Tower - roljui.mp3">Clique aqui para baixar o áudio MP3</a></p>
+</audio>
+
+- O navegador vai tentar baixar na ordem descrita acima, primeiro MP3, depois ogg, e depois wav.
+- Wav é MUITO pesado, então é bom evitar
+- o parâmetro loop vai repetir a música qnd ela acabar
+- o parâmetro autoplay faz a música ser reproduzida assim que a pág abrir
+- o parâmetro controls exibe um menu de play/pause, controle de volume, e tempo de exibição do áudio
+- OBS: o formato MP3 é do tipo mpeg
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+
+<Aula 19 (vídeos)>
+
+
+-Para encontrar, vou no pexels
+-Não precisa baixar na qualidade full
+-HandBrake para conversão dos vídeos (formato vimeo yotube 30fps)
+- Formatos mais comuns são o .mp4 e .webm
+- é bom tentar colocar nos formatos .mp4, .ogv, .webm e .m4v
+
+<!--Vídeos em hospedagem interna-->
+<video width = "500" controls>
+    <sourc src = "url.extensao" type = "video/mp4">
+    <source src = "url.extensao2" type = "video/webm">
+</video>
+
+
+<!--Vídeos em hospedagem externa-->
+
+- Melhor opção, pois evita um alto custo no armazenamento do site.
+- Melhor maneira é buscar vídeos do youtube
+- Na aba de comartilhar, seleciono a opção de incorporar, e copio o código HTML
+- Depois, é só colar esse código no seu HTML :)
+- Formato m4v é o mais recomendável
+
+
+<!------------------------------------------------------------MÓDULO 2------------------------------------------------------------>
+
+<Aulas-1-7 (estudo das cores)>
+
+- Preto com branco causa um cansaço visual grande, só usar quando tiver pouco texto.
+- no CSS, posso representar a cor como:
+
+<!--RGB (Red, Green, Blue) -->
+<h1 style = background-color: rgb(0, 0, 255)>
+
+<!--HSL (Hue, Saturation, Luminosity)-->
+<h1 style = background-color: hsl(240, 100%, 50%)> 
+
+
+
+<!--Harmonização das cores-->
+
+
+- Cores primárias: amarelo, vermelho e azul
+- Cores secundárias: laranja, violeta e verde
+- Cores terciárias: mistura da cor secundária com a cor secundária. ex.: amarelo-esverdeado
+- Cores frias: verde, azul e roxo escuro
+- Cores quentes: amarelo, laranja, vermelho e violeta
+- Um site DEVE ter de 3 a 5 cores na paleta, sem contar o preto e o branco, no MÁXIMO (ideal são 4).
+- Cores análogas: as que estão perto na paleta de cores
+- Cores complementares: As cores mais distantes entre si na paleta
+- Ideal é usar três cores análogas e uma cor complementar
+- Cores análogas relacionadas: duas cores análogas (vizinhas), excluo a próxima e seleciono a seguinte
+- Cores intercaladas: Seleciono uma cor sim, e outra não
+- Cores triádicas: seleciono uma, pulo três, e seleciono outra
+- Cores em quadrado: Seleciono uma cor, pulo duas, seleciono outra, e sigo a ordem, selecionando 4 cores no total
+- Cores tetrádicas: Seleciono uma cor, escolho a sua cor complementar, depois escolho outra cor e pego sua complementar
+- Monocromia: Escolho uma cor e altero a saturação e luminosidade (efeito degradê)
+
+<!--Paletas de cores-->
+- Adobe color:
+    * Extrair tema -> a ferramenta capta as cores de alguma logo fornecida pela usuário
+    * A ferramenta explorar fornece algumas paletas pré-definidas.
+
+- Paletton.com:
+    * Seleciono a paleta de cores
+    * Escolho a opção "exemplos", e me é mostrado um exemplo de um site com essas cores escolhidas
+
+-Collors:
+    * As cores são escolhidas aleatoriamente
+
+
+<!--Como capturar cor de uma tela-->
+- ColorZilla (extensão google)
+
+
+
+<!--Como criar degradê-->
+- Background-image: linear-gradiente(to "direção", "color1", "color2") - Posso colocar quantas cores quiser
+- "direção" pode ser left, right, top, bottom
+- ao invés de "to 'direção'", posso selecionar "45deg", onde 45 pode ser qualquer número
+- Ao lado de cada cor, posso colocar a porcentagem que desejo que aquela cor possua
+
+*{ //Configurações globais dos CSS
+
+}
+
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<Aula-9-15 (Tipografia)>
+
+- Categorias de fontes:
+    * Serifadas: Fontes que possuem serifa (parte de baixo que "apoia" a letra);
+    * sans-serif: Fontes que não possuem serifa;
+    * Monoespaçadas: Fontes cujo espaçamento de todas as letras, vírgula, espaços e etc. é o mesmo;
+    * handwriting: Fonte que tenta simular uma escrita à mão;
+    * display: Fonte que não tem nenhuma das características acima.
+
+- Usando as fontes no CSS
+    * Para procurar combinações seguras de fontes, pesquiso no google "CSS safe font combinations" - w3schools
+
+- Unidades de medida recomendadas:
+    -PX
+    -em
+    (1em = 16px)
+
+Ao invés de:
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+Posso fazer:
+
+p{
+    font: italic bold 1em Arial, Helvetica, sans-serif;
+}
+
+
+IMPORTANTE!!
+A ordem deve ser seguida:
+• font-style: italic, normal, oblique;
+• font-variant
+• font-weight: lighter, normal, bold, bolder;
+• font-size/line-h
+
+
+<!--Usando o google fontes-->
+
+- Acesso o google fonts
+- Escolho a fonte, e seleciono "select this style"
+- Seleciono a opção "embed" e "@import"
+
+<!--Baixando uma fonte-->
+
+- Baixo a fonte
+- Colo o arquivo da fonte na pasta que contém o HTML da página em questão
+- No CSS, escrevo:
+    
+    @font-face{
+        font-family: ; //Coloco o apelido da fonte, como vou chamá-la
+        src: url() format(), url(), format(); //Posso add mais de um, mas não é preciso
+    }
+
+        /*
+            Tipos de format()
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typograph)
+                - svg
+        */
+
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<Aula-16 (Alinhamento de texto)>
+
+- text-indent: 30px; //Recuo do parágrafo
+
+- text-align: alinhamento;
+
+    Onde alinhamento pode ser:
+        - left
+        - right
+        - center
+        - justify
+
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+
+<Aula-17 (Seletores personalizados id e class)>
+
+- HTML: - ID      CSS: - #
+        - class        - .
+
+
+- Diferenças entre id e class:
+    * id é único. Só pode haver um item com aquele id específico.
+        ex.: <div id = "basico">
+            só esse elemento pode ter esse id "básico"
+
+    * class: vários itens podem ter o mesmo atributo de class
+
+- Um elemento pode ter mais de uma classe. Para fazer isso, é só fazer:
+    <div class = "avancado destaque">
+        só separo as classes por um espaço simples, sem vírgula
+
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+
+<Aula-19 (pseudo-classes)>
+
+- Caso eu crie várias divs, caso eu queira que fique tudo na mesma linha, coloco no CSS:
+
+div{
+    display: inline-block;
+}
+
+- Para acessar um elemento dentro de outro, posso fazer assim:
+
+<div>
+    Passe o mouse aqui
+    <p>TEXTO ESCONDIDO</p>
+</div>
+
+div > p{
+    display: none; <!--Escondo o texto escrito em <p>-->
+}
+
+div:hover > p{ <!--Se o mouse estiver sobre a div, acesso o elemento "p"-->
+    display: block; <!--Mostro oq estava escondido-->
+}
+
+
+<!--Para verificar se algum link já foi visitado:-->
+- a:visited{
+}
+
+<!--Para verificar se o mouse está sobre o link:-->
+- a:hover{
+
+}
+
+<!--Para verificar se o mouse está "clicado":-->
+- a:active{
+
+}
+
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<Aula-20 (pseudo-elementos)>
+
+a::after{ <!--Seleciono a parte imediatamente posterior ao elemento a-->
+}
+
+
+<!--SELETORES PERSONALIZADOS-->
+    #  = id
+    .  = class
+    :  = pseudo-class
+    :: = pseudo-element
+    >  = children
+
+<!---------------------------------------------------------------------------------------------------------------------------------------->
+
+<Aula-21 (modelos de caixas)>
+
+- padding: preenchimento. É a distância interna do conteúdo pra borda da caixa que o contém.
+
+- margin: É a distância entre a borda de uma caixa e o próximo conteúdo  
+
+- outline: contorno que fica fora do elemento, parecido com a borda, só que do lado de fora
+
+- box-level: pulo uma linha, insiro a caixa, depois pulo outra linha, e retorno ao conteúdo (aula 23 min 12'13")
+
+- inline-level: não quebra a linha nem antes nem depois da inserção da caixa. Ou seja, permanece na mesma linha
+
+- <div>  -> Quebra a linha
+
+- <span> -> Não quebra a linha
+
+
+- TAGAS BOX-LEVEL:
+    <div>
+    <h1>-<h6>
+    <p>
+    <main>
+    <nav>
+    <article>
+    <aside>
+    <footer>
+    <form>
+    <video>
+
+- TAGS INLINE-LEVEL:
+    <span>
+    <a>
+    <code>
+    <smalll>
+    <strong>
+    <em>
+    <sup>-<sub>
+    <label>
+    <button>
+    <input>
+    <select>
+
+<Aula-22-23 (modelos de caixas na prática)>
+
+- display: block; <!--Significa que o display será no formato box-level-->
+
+- A margem sempre é precisa ser colocada no sentido horário:
+    -top
+    -right
+    -bottom
+    -left
+
+- margin: auto; //Centraliza a caixa horizontalmente
+
+- border: espessura estilo cor;
+
+- padding: top right bottom left; <!--Se eu colocar somente um parâmetro, todos os outros terão esse valor, se eu colocar 2 parâmetros, o primeiro será referente ao top e bottom, e o segundo será referente aos lados.
+
+    Ex.: padding: 10px 20px;
+
+        top e bottom terão 10px;
+        left e right terão 20px;
+
+    ex.2: margin: 10px auto 20px auto;
+
+        Centralizo as margens dos lados.-->
+
+<Aula-24 (grouping tags)>
+
+- header: cabeçalho
+- main: conteúdo principal
+- footer: rodapé
+- dentro da main podem ter várias sections, articles, etc.
+
+<Aula-25 (box-shadow)>
+
+- O parágrafo <p> tem uma margem alta.
+
+- box-shadow: deslocamento_horizontal deslocamento_vertical espalhamento cor;
+
+- Posso adicionar o box-shadow no dev tools
+
+
+- Para corrigir o autoajuste do site à tela do usuário, ao invés de fazer:
+    
+    width: 800px;
+
+devo fazer:
+    
+    min-width: 320px;
+    max-width: 800px
+
+<Aula-29-43 (início do projeto)>
+
+- Mockflow: site gratuito para planejamento do layout
+- Fonte: bombas neue
+
+
+<!--Usando variáveis em CSS-->
+
+:root{
+    --cor1: #AA0000;
+    --cor2: #00AA00;
+    --cor3: #0000AA;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-a ndroid
+}
+
+
+img{
+    width: 100%;
+}
+
+ul{
+list-style-position: inside; //Posiciona lista dentro da caixa
+}
+
+
+Diferença entre:
+
+main > ul <!--seleciona o elemento ul que está imediatamente dentro da main. Entretanto, no caso do desafio 10, como a ul está dentro de uma div dentro de aside, não vai funcionar-->
+
+main ul <!--Acessa qualquer ul que está dentro da main, podendo estar dentro de alguma div ou não-->
+
+logo, para usar o símbolo de maior (>), o elemento precisa estar dentro da div, exemplo:
+
+    ex.:div > ul
+
+Nesse caso, ul precisa estar imediatamente dentro de div, sem estar dentro de nenhum outro elemento
+
+
+<!------------------------------------------------------------MÓDULO 3------------------------------------------------------------>
+
+ - Para add um novo repositório no GITHUB, seleciono file -> new repository
+    - Coloco no "nome" o nome do arquivo que quero copiar
+    - Coloco no local path o nome do diretório que o o arquivo está
+    - Em licença, coloco MIT License
+    - Initialize this repository with a README
+    - Create repository
+- Com os passos acima, criei o repositório LOCAL. Para criar o repositório remoto, clico em "publish"
+- Desmarco a opção de manter o código privado (para que outras pessoas tenham acesso)
+- A cada alteração feita localmente, preciso comitar e enviar pro repositório na nuvem.
+
+- Para baixar o código de outra pessoa, vou até seu perfil, clico em "code", e, em seguida, "open with github desktop"
+
+
+<!--Github em vários computadores-->
+- Para acessar de outro computador que não o meu:
+    File -> options -> accounts -> sign in Github.com
+- Possa ser que dê erro ao acessar os repositórios. Para resolver isso, faço:
+    File -> options -> Git -> Save
+- Seleciono o repositório que desejo clonar, e seleciono a opção "clonar"
+
+<!--Para sair-->
+- Fecho todas as abas, exceto github desktop    
+- No github desktop, clico em repository -> Remove -> Also move this repository to recycle bin
+- Depois, saio do GitHub, clicando em:
+    file -> options -> sign out 
+
+- Saio do git, fazendo:
+    file -> options -> git -> apago nome e email
+- Esvazio a lixeira 
+
+
+
+align-items: center; //alinha verticalmente dois itens de uma div
+justify-content: center; //Alinha os elementos no meio da div na página (Insiro no container)
+
+-Para alinhar um texto horizontalmente e verticalmente, posso fazer:
+
+.pai {
+  display: flex;
+  justify-content: center; //alinha horizontalmente
+  align-items: center; //Alinha verticalmente
+}
+
+.filho {
+  align-self: center; //Alinha verticalmente
+}
+
+
+<Tipos-De-Display>
+
+    - inline: os itens desse tipo podem ficar na mesma linha que outros, mas não pode ser modificado (altura, largura, etc.)
+    - block: ocupa um bloco todo, não podendo ter nada na mesma linha que ele
+    - inline-block: Consegue conciliar ambos, podendo ter outros itens na mesma linha, e podendo ter suas dimensões alteradas
+
+<Flexbox>
+
+- justify-content: alinha os elementos horizontalmente, podendo ser dos tipos:
+    * flex-start: alinha os itens do lado esquerdo
+    * flex-end: alinha os itens do lado direito
+    * center: alinha os itens no meio do container
+    * space-between: coloca espaços de mesmo tamanho entre os itens do container
+    * space-around: coloca espaços de mesmo tamanho ao redor dos itens do container
+
+- align-items: alinha os elementos verticalmente, podendo ser dos tipos:
+    * flex-start: alinha os itens do lado esquerdo
+    * flex-end: alinha os itens do lado direito
+    * center: alinha os itens no meio do container
+    * baseline: os itens são mostrados na linha de base do container
+    * stretch: estica os itens para caberem no container
+
+- flex-direction: define a direção em que os itens serão colocados dentro do container, podendo ser:
+    * row: os itens são colocados na mesma, em forma de texto.
+    * row-reverse: itens são colocados ao contrário
+    * column: os itens são colocados em forma de coluna.
+    * column-reverse: os itens são colocados de baixo pra cima
+
+OBS: ao usar o flex-direction: column, o justify-content muda para vertical e o align-items muda para o horizontal.
+
+- order: posso alterar a ordem de um elemento.
+    Exemplo:
+        .yellow{
+            order: -1; //A sequência padrão é: (-1, 0, 1, 2...)
+        }
+
+- align-self: alinha um único elemento. Recebe os mesmos parâmetros que o align-items
+
+- flex-wrap: "quebra a linha" entre itens, podendo ter os seguintes valores:
+    * nowrap: todos os itens serão colocados na mesma linha, mesmo que fiquem comprimidos;
+    * wrap: itens são cortados para linhas adicionais;
+    * wrap-reverse: corta e inverte os itens
+
+- As propriedades flex-direction e flex-wrap podem ser usadas juntas no shorthand flex-flow, com a seguinte sintaxe:
+    * flex-flow: direction wrap;
+
+- align-content: defino quantas linhas de espaço haverão entre um item e outro, podendo ser:
+    * flex-start: as linhas são estreitadas no sentido para cima do container
+    * flex-end: as linhas são estreitadas no sentido para baixo do container
+    * center: as linhas são estreitadas no sentido para o centro do container
+    * space-between: equaliza a quantidade de espaço entre os itens
+    * space-around: equaliza a quantidade de espaço ao redor dos itens 
+    * stretch: as linhas são esticadas para caberem no container
+
+OBS: AO APLICAR AS PROPRIEDADES ACIMA, DEVO APLICAR NO CONTAINER QUE CONTÉM OS ITENS QUE DESEJO ALINHAR. DEVO OBSERVAR O TAMANHO DO CONTAINER, POIS OS ITENS DENTRO DELE FICARÃO NO MEIO DELE, ENTÃO SE ELE FOR CURTO OU ESTREITO, DARÁ A IMPRESSÃO DE QUE NÃO ESTARÁ CENTRALIZADO.
+
+<Aula-14 (background/wallpaper)>
+
+- background-size: largura altura;
+- background-repeat: no-repeat;
+- background-position: seleciono onde quero posicionar minha imagem. Ex.:
+    background-position: right bottom; //Coloca a imagem no canto inferior direito
+
+    right: coluna
+    bottom: linha
+
+    OBS: o valor selecionado no background-position sempre será referência de ancoragem pro site. No caso de aumentar ou diminuir o tamanho da tela, a posição escolhida será sempre a referência
+
+ height: 100vh; //100vh significa que a altura ocupará 100% da viewport de altura
+
+ - background-size: 
+                    100%  100%; -> preenche a tela, mas achata e distorce a imagem quando mudo o tamanho da tela
+                    countain;   -> a imagem é 100% exibida, com laterais vazias as vezes 
+                    cover;      -> cobre a tela toda mesmo que tenha que cortar a imagem
+
+
+- background-attachmente: "trava" uma imagem na tela, podendo receber os seguintes parâmetros:
+     
+        * fixed: fixa o background na tela. Por mais que eu role para baixo, ele permanece estático.  
+
+
+<!-- Shorthand para background:-->
+    sigo a ordem: color > image > position > repeat > [size] > attachment
+
+OBS: O SIZE NÃO FUNCIONA, ENTÃO MELHOR COLOCAR ELE FORA
+
+
+<Projeto-Cordel>
+
+- font-size: 3.5vh (aumento ou diminuo o tamanho da letra de acordo com a altura da janela)
+- font-variant: small-caps; // As letras que estiverem minúsculas ficam em capslock, mas diminuem de tamanho
+
+OBS.: Ao colocar um texto na frente de uma imagem, é ideal que se coloque um "display: inline-block;" no CSS do texto (.imagem > p) para possibilitar que a caixa do background aumente junto com as letras, evitando que as letras "estourem" pra fora do background
+
+
+padding-top: 10vh;
+padding-bottom: 10vh; //Condiciona os espaços acima e abaixo de acordo com a altura da tela. Caso eu aumente ou diminua a tela, o espaço também é aumentado/diminuído
+
+
+<Aula-27 (Criando tabelas em HTML)>
+
+- A sintaxe para criação é a seguinte:
+    <table>
+        <tr class = "linha1">
+            <td>Dado1</td>
+            <td>Dado2</td>
+            <td>Dado3</td>
+        </tr>
+         <tr class = "linha2">
+            <td>Dado4</td>
+            <td>Dado5</td>
+            <td>Dado6</td>
+        </tr>
+         <tr class = "linha3">
+            <td>Dado7</td>
+            <td>Dado8</td>
+            <td>Dado9</td>
+        </tr>
+    </table>
+
+
+<!-- 
+HIERARQUIA DE TABELAS (simples)
+    TABLE = tabela
+        TABLE ROW (TR) = linha da tabela
+            TABLEA HEADER (TH) = cabeçalho da tabela
+            TABELA DATA (TD) = dado da tabela
+-->
+border-collapse: collapse; //Retira o espaço entre as linhas da tabela. Pode ser também:
+    * separate: separa os dados da coluna
+
+
+- Para alinhar horizontalmente:
+    * text-align: left/right/center
+
+- Para alinhar verticalmente:
+    * vertical-align: bottom/middle/top
+
+
+<!--
+Tabelas grandes
+    TABLE
+        THEAD
+            TR, TD, TH
+        TBODY4
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+-->
+
+OBS: no th, preciso colocar um "scope", para indicar se será um cabeçalho cujos dados estarão abaixo dele (coluna) ou ao lado (linha), podendo ser:
+    scope = "col" ou scope = "row"
+
+- Para fazer o efeito zebrado:
+
+ tbody > tr:nth-child(2n) //A cada 2, pinto uma
+
+no parâmetro posso passar :odd (ímpar)
+                           even (par) 
+
+- Cabeçalho fixo em tabelas grandes:
+    
+
+<!------------------------------------------------------------MÓDULO 4------------------------------------------------------------>
+
+ - iframe: cria uma "janela" inline, como se fosse uma aba de um navegador, só que dentro da própria página
+
+  <!-- Tamanho padrão 300x150 -->
+ <iframe src="https://www.cursoemvideo.com" frameborder = "0"></iframe>
+
+ Para alterar o tamanho, posso fazer inline:
+ <iframe src="https://www.cursoemvideo.com" frameborder = "0" height = "500" width="300"></iframe>
+
+- Para impedir a rolagem, posso fazer, dentro do iframe:
+scrolling = "no"
+
+- Se eu quiser colocar um link para uma página do meu site dentro de um iframe que está na página atual página atual, posso add um atributo "name" dentro do iframe, colocando um nome pra ele, e no "target" do <a> adiciono o nome do iframe
+
+- Se eu quiser inicializar o iframe já com uma tela inicial, é só colocar no src o caminho para essa tela inicial.
+
+- Para deixar o iframe mais seguro, posso adicionar alguns parâmetros:
+
+    * sandbox = "allow-same-origins allow-forms allow-scripts"
+    * referrerpolicy = "no-reference"
+
+- Para esconder a barra de rolagem, posso fazer:
+::webkit-scrollbar{
+    width: 0px;
+}
+
+
+<!--Formulários:-->
+
+- Um formulário precisa estar entre <form></form>. Ex.:
+
+    <form>
+        <p>Nome:<input type="text" name="nome" id = "inome"></p>
+        <p>Sobrenome:<input type="text" name="sobrenome" id = "isobrenome"></p>
+        <p><input type="submit" name="Enviar"></p>
+    </form>
+
+- Entretanto, a forma acima está errada, pois não relaciona "nome" e "sobrenome" aos seus respectivos inputs. Para corrigir isto, devo fazer:
+
+    <form>
+        <p><label for="iname">Nome:</label></p>
+        <input type="text" name="nome" id = "inome">
+
+        <p><label for="isborenome">Sobrenome:</label></p>
+        <input type="text" name="sobrenome" id = "isobrenome">
+    </form>
+
+- Métodos GET e POST para formulários
+
+Existem dois métodos que são simples para  envio de formulário. São eles: method="GET" e method="POST"
+
+o primeiro é o GET (padrão), é o método que coloca os dados do formulário na URL.
+
+O método POST não deixa aparecer os dados digitados na URL
+
+GET: basicamente, vc vai utilizar quando os dados não foram sensíveis (ex: nome, peso, busca estilo Google) vc NAO estará pedindo senha, cartão de credito, endereço, CEP, envio de fotos ou qualquer tipo de arquivo. Utilize GET quando os dados NÃO forem sensíveis e não precisar serem protegidos.
+OBS: tem um limite, quando vc envia dados por GET, só pode enviar até 3 mil bytes (é aproximadamente 3 mil letras)
+
+POST: dados sensíveis (o ideal é com HTTPS para proteger dados), os dados não aparecem na URL, mais de 3 mil bytes, envio de arquivos.
+
+<Aula-20 (caixas de texto e de senha)>
+
+- Para criar um input que irá conter o password, o melhor a se fazer é:
+
+    <input type="password" name="senha" id = "isenha">
+
+- Se eu quiser fazer com que o campo seja obrigatório, é só acrescentar um parâmetro, chamado "required"
+
+    <input type="password" name="senha" id = "isenha" required>
+
+- Se eu quiser adicionar tamanho mínimo ou máximo de input, posso acrescentar os parâmetros "minlength" e "maxlength"
+    
+    <input type="password" name="senha" id = "isenha" minlength="10" maxlength="20">
+
+- Se eu quiser diminuir o tamanho da caixa, posso fazer:
+
+    <input type="password" name="senha" id = "isenha" size = "10">
+
+- Se eu quiser colocar uma "dica" dentro da caixa, para que fique mais fácil para o usuário saber o que é pra preencher, posso add o parâmetro "placeholder":
+
+    <input type="password" name="senha" id = "isenha" placeholder="senha">
+
+OBS: esse input deve estar dentro de uma tag <form>, da seguinte forma:
+
+     <form action="cadastro.php" method="get">
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha">
+        </p>
+    </form>
