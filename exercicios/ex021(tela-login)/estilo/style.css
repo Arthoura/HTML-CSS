@@ -101,6 +101,12 @@ form{
 .campo:focus-within{
     background: white;
 }
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /*Para tablet*/
 @media screen and (max-width:710px) and (min-width:600px){
     main{

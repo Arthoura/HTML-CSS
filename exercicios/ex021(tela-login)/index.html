@@ -17,25 +17,27 @@
                 Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente
             </p>
             <!--Div que irá conter a caixa de login-->
-            <div class = "caixa" id = "login">
-                <form action="cadastro.php" method = "get">
-                    <label for="ilogin"><span class="material-icons">person</span></label>
-                    <input class = "campo" type="email" name="login" id="ilogin" placeholder = "Digite seu login">
+            <div id = "inputs">
+                <div class = "caixa" id = "login">
+                    <form action="cadastro.php" method = "get">
+                        <label for="ilogin"><span class="material-icons">person</span></label>
+                        <input class = "campo" type="email" name="login" id="ilogin" placeholder = "Digite seu login">
+                    </form>
+                </div>
+                <!--Div que irá conter a caixa de senha-->
+                <div class = "caixa" id = "senha">
+                    <form action="cadastro.php" method="get">
+                        <label for="isenha"><span class="material-icons">vpn_key</span></label>
+                        <input class = "campo" type="password" name="senha" id="isenha" placeholder = "Digite sua senha">
                 </form>
-            </div>
-            <!--Div que irá conter a caixa de senha-->
-            <div class = "caixa" id = "senha">
-                <form action="cadastro.php" method="get">
-                    <label for="isenha"><span class="material-icons">vpn_key</span></label>
-                    <input class = "campo" type="password" name="senha" id="isenha" placeholder = "Digite sua senha">
-            </form>
-            </div>
-            <!--Divs que irão conter os botões de entrar e esqueci a senha-->
-            <div id = "entrarbtn">
-                <p>Entrar</p>
-            </div>
-            <div id = "esquecibtn">
-                <p>Esqueci a senha</p>
+                </div>
+                <!--Divs que irão conter os botões de entrar e esqueci a senha-->
+                <div id = "entrarbtn">
+                    <p>Entrar</p>
+                </div>
+                <div id = "esquecibtn">
+                    <p>Esqueci a senha</p>
+                </div>
             </div>
 
         </div>
