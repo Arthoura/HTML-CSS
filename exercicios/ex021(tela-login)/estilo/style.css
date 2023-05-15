@@ -134,8 +134,8 @@ form{
     main > #info{
         margin: auto;
     }
-   .caixa{
-        width:100%;
+   .caixa, .campo{
+        width:45vw;
     }
    
 }
