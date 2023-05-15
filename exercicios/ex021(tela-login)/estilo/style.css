@@ -81,6 +81,7 @@ form{
 #entrarbtn{
     color:white;
     background-color: #005C53;
+    width:39vw;
 }
 #entrarbtn:hover{   
     background-color: #00c9b5;
@@ -89,6 +90,7 @@ form{
 }
 #esquecibtn{
     color:#005C53;
+    width: 39vw;
 }
 
 #esquecibtn:hover{
@@ -134,9 +136,10 @@ form{
     main > #info{
         margin: auto;
     }
-   .caixa, .campo{
-        width:45vw;
-        background-color: black;
+    .caixa{
+        width: 40vw;
     }
-   
+    .campo{
+        width: 100%;
+    }
 }
