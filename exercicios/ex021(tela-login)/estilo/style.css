@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color1: #005C53;
+    --color2: #DBF227;
+}
+body{
+    background-image: linear-gradient(to top, var(--color1), var(--color2));
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    width: 80vw;
+    max-width: 750px;
+}
+main > #info{
+    padding: 15px;
+    display: block;
+    width:45vw;
+}
+
+main > #info > h1{
+    text-align: center;
+    font: normal 2em Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.caixa{
+    margin-top:2px;
+    background-color: purple;
+    border-radius: 10px;
+    border: 1px solid black;
+    width:40vw;
+    max-width:350px;
+}
+.campo{
+    display: block;
+    border-radius: 10px;
+    padding:4px 8.5px 4px 10px;
+    margin-left: 5px;
+    width:300px;
+    background-color: #71d8cef6;
+}
+.material-icons{
+    color:white;
+    margin-left: 5px;
+}
+
+form{
+    display: flex;
+    align-items: center;
+}
+
+#background{
+    display: flex;
+    background-image: url(../imagens/predio.jpg);
+    background-position: center right;
+    width:40vw;
+    border-radius:0px 10px 10px 0px;
+}
+
+#entrarbtn, #esquecibtn{
+    text-align: center;
+    padding:2px;
+    margin-top:2px;
+    border: 1px solid var(--color1);
+    border-radius: 5px;
+    max-width:350px;
+}
+#entrarbtn{
+    color:white;
+    background-color: #005C53;
+}
+#entrarbtn:hover{   
+    background-color: #00c9b5;
+    cursor: pointer;
+    color:#005C53
+}
+#esquecibtn{
+    color:#005C53;
+}
+
+#esquecibtn:hover{
+    background-color: #DBF227;
+    cursor: pointer;
+}
+
+.campo:focus-within{
+    background: white;
+}
+/*Para tablet*/
+@media screen and (max-width:710px) and (min-width:600px){
+    main{
+        flex-direction: row-reverse;
+        width:90vw;
+    }
+    main > #info{
+        width: 40vw;
+    }
+    main > #background{
+        width:50vw;
+        border-radius: 10px 0px 0px 10px;
+        background-position: center center;
+    }
+}
+
+/*Para celular*/
+@media screen and (max-width:600px){
+    main{
+        flex-direction: column-reverse;
+        width:300px;
+        height: 540px;
+    }
+    body{
+        background: #005C53;
+    }
+    main > #background{
+        height: 300px;
+        width:300px;
+        padding: 0px;
+        border-radius: 10px 10px 0 0;
+    }
+    main > #info{
+        margin: auto;
+    }
+   .caixa{
+        width:100%;
+    }
+   
+}
