@@ -136,6 +136,7 @@ form{
     }
    .caixa, .campo{
         width:45vw;
+        background-color: black;
     }
    
 }
