@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    font: normal 1em Helvetica, Arial, sans-serif;
+}
+body{
+    background-color: lightgray;
+}
+header > h1{
+    text-align: center;
+    background-color: gray;
+    padding-bottom:50px;
+    padding-top:10px;
+}
+
+nav{
+    background-color: gray;
+}
+
+nav > a{
+    display: inline-block;
+    background-color: rgb(73, 72, 72);
+    text-decoration: none;
+    color:rgb(189, 189, 189);
+    padding: 5px;
+    transition: .4s;
+}
+nav > a:hover{
+    background-color: rgb(175, 175, 175);
+    
+}
+main{
+    margin:auto;
+    max-width:500px;
+    min-width:20vw;
+    text-align: justify;
+    background-color: white;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+main > p{
+    margin-top: 20px;
+    text-indent: 30px;
+}
